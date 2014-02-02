@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>MVPVM 基本ページ</Name>
+    <Description>MVPVM アーキテクチャの Presenter, ViewModel つき基本ページ</Description>
+    <Icon>BasicPage.png</Icon>
+    <TemplateGroupID>WinRT-Managed-Win81</TemplateGroupID>
+    <ProjectType>CSharp</ProjectType>
+    <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
+    <DefaultName>BasicPage.xaml</DefaultName>
+    <ShowByDefault>false</ShowByDefault>
+    <PreviewImage>BasicPage.png</PreviewImage>
+    <TargetPlatformName>Windows</TargetPlatformName>
+    <RequiredPlatformVersion>6.3.0</RequiredPlatformVersion>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="true" OpenInEditor="true" TargetFileName="/Views/$fileinputname$.xaml">BasicPage.xaml</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="/Views/$fileinputname$.xaml.cs">BasicPage.xaml.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true" OpenInEditor="true" TargetFileName="/Presenters/$fileinputname$Presenter.cs">BasicPagePresenter.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true" OpenInEditor="true" TargetFileName="/ViewModels/$fileinputname$ViewModel.cs">BasicPageViewModel.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true" CustomTool="TextTemplatingFileGenerator" TargetFileName="/ViewModels/$fileinputname$ViewModel.tt">BasicPageViewModel.tt</ProjectItem>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>Microsoft.VisualStudio.WinRT.TemplateWizards, Version=12.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>Microsoft.VisualStudio.WinRT.TemplateWizards.SmartItem.Wizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+  </WizardData>
+ </VSTemplate>

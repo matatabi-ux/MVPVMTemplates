@@ -1,0 +1,117 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>MVPVM Windows ストアアプリ</Name>
+    <Description>MVPVM アーキテクチャの Windows ストアアプリプロジェクトテンプレート</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>Windows Store</ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>WindowsStoreApp</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="MVPVMWindowsStoreApp.csproj" File="MVPVMWindowsStoreApp.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml">App.xaml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml.cs">App.xaml.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Package.appxmanifest">Package-managed.appxmanifest</ProjectItem>
+      <Folder Name="Assets" TargetFolderName="Assets">
+        <Folder Name="Data" TargetFolderName="Data">
+          <ProjectItem ReplaceParameters="false" TargetFileName="default-app-settings.xml">default-app-settings.xml</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Badge.scale-100.png">Badge.scale-100.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Logo.scale-100.png">Logo.scale-100.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="SmallLogo.scale-100.png">SmallLogo.scale-100.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="SplashScreen.scale-100.png">SplashScreen.scale-100.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="StoreLogo.scale-100.png">StoreLogo.scale-100.png</ProjectItem>
+      </Folder>
+      <Folder Name="Behaviors" TargetFolderName="Behaviors">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ScrollBarBindableBehavior.cs">ScrollBarBindableBehavior.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Common" TargetFolderName="Common">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BindableBase.cs">BindableBase.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="NavigationHelper.cs">NavigationHelper.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ObservableDictionary.cs">ObservableDictionary.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ReadMe.txt">ReadMe.txt</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RelayCommand.cs">RelayCommand.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SuspensionManager.cs">SuspensionManager.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Controls" TargetFolderName="Controls">
+        <ProjectItem ReplaceParameters="true" TargetFileName="MinimizeAppBar.cs">MinimizeAppBar.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Convertes" TargetFolderName="Convertes">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BooleanNegationConverter.cs">BooleanNegationConverter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BoolToVisibilityConverter.cs">BoolToVisibilityConverter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DateTimeToStringConverter.cs">DateTimeToStringConverter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StringFormatConverter.cs">StringFormatConverter.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Entities" TargetFolderName="Entities">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationSettings.cs">ApplicationSettings.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationSettings.tt">ApplicationSettings.tt</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationSettings.generated.cs">ApplicationSettings.generated.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Framework" TargetFolderName="Framework">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ICleanup.cs">ICleanup.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IPresenter.cs">IPresenter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IView.cs">IView.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ModuleContainer.cs">ModuleContainer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PageBase.cs">PageBase.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PagePresenterBase.cs">PagePresenterBase.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PresenterLocator.cs">PresenterLocator.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ViewModelBase.cs">ViewModelBase.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ViewModelLocator.cs">ViewModelLocator.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="VisualTreeUtility.cs">VisualTreeUtility.cs</ProjectItem>
+      </Folder>
+      <Folder Name="InfrastructureAssemblies" TargetFolderName="InfrastructureAssemblies">
+        <ProjectItem ReplaceParameters="false" TargetFileName="Microsoft.Practices.ServiceLocation.dll">Microsoft.Practices.ServiceLocation.dll</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Microsoft.Xaml.Interactions.dll">Microsoft.Xaml.Interactions.dll</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Microsoft.Xaml.Interactivity.dll">Microsoft.Xaml.Interactivity.dll</ProjectItem>
+      </Folder>
+      <Folder Name="Models" TargetFolderName="Models">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationSettingsModel.cs">ApplicationSettingsModel.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Presenters" TargetFolderName="Presenters">
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainPresenter.cs">MainPresenter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TopPagePresenter.cs">TopPagePresenter.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Selectors" TargetFolderName="Selectors">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IndexToTemplateSelector.cs">IndexToTemplateSelector.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Strings" TargetFolderName="Strings">
+        <Folder Name="ja-JP" TargetFolderName="ja-JP">
+          <ProjectItem ReplaceParameters="false" TargetFileName="Resources.resw">Resources.resw</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Templates" TargetFolderName="Templates">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Entity.ttinclude">Entity.ttinclude</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ViewModel.ttinclude">ViewModel.ttinclude</ProjectItem>
+      </Folder>
+      <Folder Name="Themes" TargetFolderName="Themes">
+        <ProjectItem ReplaceParameters="true" TargetFileName="DesignTheme.xaml">DesignTheme.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Generic.xaml">Generic.xaml</ProjectItem>
+      </Folder>
+      <Folder Name="ViewModels" TargetFolderName="ViewModels">
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainViewModel.cs">MainViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainViewModel.tt">MainViewModel.tt</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainViewModel.generated.cs">MainViewModel.generated.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TopPageViewModel.cs">TopPageViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TopPageViewModel.tt">TopPageViewModel.tt</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TopPageViewModel.generated.cs">TopPageViewModel.generated.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Views" TargetFolderName="Views">
+        <ProjectItem ReplaceParameters="true" TargetFileName="TopPage.xaml">TopPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TopPage.xaml.cs">TopPage.xaml.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$_TemporaryKey.pfx" BlendDoNotCreate="true">Application_TemporaryKey.pfx</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>Microsoft.VisualStudio.WinRT.TemplateWizards, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>Microsoft.VisualStudio.WinRT.TemplateWizards.CreateProjectCertificate.Wizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

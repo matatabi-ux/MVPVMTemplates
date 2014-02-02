@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>MVPVM Entity</Name>
+    <Description>MVPVM アーキテクチャのテキストテンプレートつき Entity</Description>
+    <Icon>Entity.png</Icon>
+    <TemplateGroupID>WinRT-Managed-Win81</TemplateGroupID>
+    <ProjectType>CSharp</ProjectType>
+    <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
+    <DefaultName>Entity.cs</DefaultName>
+    <ShowByDefault>false</ShowByDefault>
+    <PreviewImage>Entity.png</PreviewImage>
+    <TargetPlatformName>Windows</TargetPlatformName>
+    <RequiredPlatformVersion>6.3.0</RequiredPlatformVersion>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="true" OpenInEditor="true" TargetFileName="$fileinputname$.cs">Entity.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true" OpenInEditor="true" CustomTool="TextTemplatingFileGenerator" TargetFileName="$fileinputname$.tt">Entity.tt</ProjectItem>
+  </TemplateContent>
+ </VSTemplate>
