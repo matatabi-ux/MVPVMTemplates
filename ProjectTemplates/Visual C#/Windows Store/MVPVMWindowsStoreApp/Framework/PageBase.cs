@@ -82,6 +82,12 @@ namespace $safeprojectname$.Views
         {
             navigationHelper.OnNavigatedFrom(e);
 
+            if (e.SourcePageType == this.GetType())
+            {
+                // 中断時の処理
+                return;
+            }
+
             this.presenter.Discard();
         }
 
